@@ -56,7 +56,7 @@
       msg: "checking /etc/ssh/sshd_config first"
   changed_when: true
   notify:
-      - generate host keys
+#      - generate host keys
       - check sshd configuration
       - restart sshd - after config check
 
